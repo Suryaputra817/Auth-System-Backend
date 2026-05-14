@@ -26,9 +26,3 @@ This system implements modern security practices including JWT-based authenticat
 * **Security:** `crypto` (hashing), `cookie-parser` (secure cookies), `cors`
 * **Email Service:** Nodemailer
 
-## 📦 Installation & Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone <repository-url>
-   cd <project-folder>
