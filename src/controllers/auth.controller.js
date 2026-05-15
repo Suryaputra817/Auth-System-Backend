@@ -267,7 +267,9 @@ export async function verifyEmail(req, res) {
       message: "Invalid OTP",
     });
   }
-  const user = await userModel.findByIdAndUpdate(otpRecord.user, { verified: true });
+  const user = await userModel.findByIdAndUpdate(otpRecord.user, {
+    verified: true,
+  });
   if (!user) {
     return res.status(404).json({
       message: "User not found",
